@@ -1,0 +1,174 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Inter:wght@100;200;300;400;500;531;600;700;800;900&family=Lobster&family=Montserrat:wght@1,500;600;700&family=Oxygen:wght@300;400;700&family=Raleway:ital,wght@0,100;0,500;1,400;1,500&family=Roboto:ital,wght@0,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link href="css/ekko-lightbox.css">
+    <link rel="stylesheet" href="css/style.css">
+  <title>ফসল</title>
+  <style>
+     .bg-img {
+   background-image: url('bg1_image.jpg');
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    transition: 1s;
+
+    animation-name: animate ;
+    animation-direction:alternate-reverse ;
+    animation-duration:15s ;
+    animation-fill-mode:forwards ;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function:ease-in-out ;
+
+}
+@keyframes animate{
+  0%{
+    background-image:url(bg1_image.jpg) ;
+  }
+  20%{
+    background-image:url(bg2.webp) ;
+  }
+  40%{
+    background-image:url(bg3.jpg) ;
+  }
+  60%{
+    background-image:url(bg4.jpg) ;
+  }
+  80%{
+    background-image:url(bg5.webp) ;
+  }
+}
+  </style>
+</head> 
+<body>
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img class="img-responsive" src="logo.jpg" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">হোম</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="crop.html">ফসলের তথ্য</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="store.html">স্টোর</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="coldstorage.html">হীমাগার</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">যোগাযোগ</a>
+          </li>
+          <div class="more">
+          <li class="nav-item">
+            <a class="nav-link" href="#">আরও</a>
+            <div class="sub-menu-1">
+              <ul>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="factories.html">ফ্যাক্টরি</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="team.html">Managing Team</a>
+                </li>     
+                <li class="nav-item">
+                  <a class="nav-link" href="founder.html">Founding Team</a>
+                </li>                
+              </ul>
+            </div>
+          </div>
+          </li>
+          
+         
+              
+        </ul>
+      </div>  
+
+    </div>
+    <!-- /container -->
+   
+  </nav>
+  <!-- /Navbar -->
+
+
+  <!-- Main content -->
+<!-- background image -->
+<form action="action_page.php" method="post">
+  
+    <p class="text-center home-supporting-text">Login for admin pannel</p>
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
+
+<div class="bg-img">
+   <div class="overlay">
+      <!-- Home page content -->
+  <div class="home-page-content">
+  
+    <h5 class="text-center home-supporting-text">এই হেমন্তে কাটা হবে ধান</h5>
+    <h5 class="text-center home-supporting-text">আবার শুন্য গোলায় ডাকবে ফসলের বান</h5>
+    <div class="home-buttons text-center fadeIn">
+     <a href="services.html"> <div class="btn homepage-btn-1 btn-lg mt-2">Services</div></a>
+    </div>
+  </div>
+  <!-- /Home page content -->
+   </div>
+   <!-- /bg-img -->
+   
+</div>
+<!-- /view -->
+
+<!-- /main content -->
+ 
+
+
+
+
+
+
+
+
+
+   <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ekko-lightbox.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
